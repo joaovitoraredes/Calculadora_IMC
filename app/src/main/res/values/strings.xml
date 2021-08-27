@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Calculadora IMC</string>
     <string name="IMC">IMC</string>
+    <string name="peso_ex">Peso (ex: 63.9Kg )</string>
+    <string name="altura_ex">Altura (ex: 1,74m)</string>
+    <string name="calcular_imc">Calcular IMC</string>
 </resources>

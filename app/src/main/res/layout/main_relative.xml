@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/titleTXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
         android:text="@string/IMC"
         android:textColor="@color/CinzaEscuro"
         android:textSize="48sp" />
@@ -19,6 +20,7 @@
         style="@style/input_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/titleTXT"
         android:hint="@string/peso_ex" />
 
     <EditText
@@ -26,17 +28,21 @@
         style="@style/input_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/altura_ex" />
+        android:layout_below="@id/pesoEDT"
+        android:hint="@string/altura_ex"
+        tools:visibility="visible" />
 
     <Button
         android:id="@+id/calcularBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_below="@id/alturaEDT"
         android:text="@string/calcular_imc"
+        android:layout_marginTop= "46dp"
+        android:layout_centerHorizontal="true"
         />
 
-</LinearLayout>
+</RelativeLayout>
 
 
 
