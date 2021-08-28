@@ -14,7 +14,7 @@
         android:text="@string/IMC"
         android:textColor="@color/CinzaEscuro"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/pesoEDT"
+        app:layout_constraintBottom_toTopOf="@+id/alturaEDT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,27 +23,27 @@
         tools:visibility="visible" />
 
     <EditText
-        android:id="@+id/pesoEDT"
-        style="@style/input_style"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="48dp"
-        android:layout_marginBottom="424dp"
-        android:hint="@string/peso_ex"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
         android:id="@+id/alturaEDT"
         style="@style/input_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="48dp"
+        android:layout_marginBottom="424dp"
         android:hint="@string/altura_ex"
-        app:layout_constraintTop_toBottomOf="@+id/pesoEDT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/pesoEDT"
+        style="@style/input_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:hint="@string/peso_ex"
+        app:layout_constraintTop_toBottomOf="@+id/alturaEDT"
         tools:layout_editor_absoluteX="48dp"
-        tools:visibility="visible" />
+        tools:visibility="visible"/>
 
     <Button
         android:id="@+id/calcularBTN"
@@ -54,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alturaEDT"
+        app:layout_constraintTop_toBottomOf="@+id/pesoEDT"
         app:layout_constraintVertical_bias="0.217"
         tools:visibility="visible" />
 
